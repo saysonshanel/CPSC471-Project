@@ -2,10 +2,10 @@
 # Date: 2017-04-04 17:51:26
 # Generator: MySQL-Front 6.0  (Build 1.48)
 
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET user utf8 */;
 
 #
-# Structure for table "names"
+# Structure for table "user"
 #
 
 DROP TABLE IF EXISTS `user`;

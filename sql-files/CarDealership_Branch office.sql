@@ -19,10 +19,10 @@
 -- Table structure for table `Branch office`
 --
 
-DROP TABLE IF EXISTS `Branch office`;
+DROP TABLE IF EXISTS `Branch_office`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Branch office` (
+CREATE TABLE `Branch_office` (
   `BranchID` int(11) NOT NULL,
   `Location` varchar(45) DEFAULT NULL,
   `Phone` int(11) DEFAULT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE `Branch office` (
 -- Dumping data for table `Branch office`
 --
 
-LOCK TABLES `Branch office` WRITE;
+LOCK TABLES `Branch_office` WRITE;
 /*!40000 ALTER TABLE `Branch office` DISABLE KEYS */;
 /*!40000 ALTER TABLE `Branch office` ENABLE KEYS */;
 UNLOCK TABLES;

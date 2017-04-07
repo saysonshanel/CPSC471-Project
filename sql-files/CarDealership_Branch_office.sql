@@ -16,28 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Dealership`
+-- Table structure for table `Branch_office`
 --
 
-DROP TABLE IF EXISTS `Dealership`;
+DROP TABLE IF EXISTS `Branch_office`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Dealership` (
-  `dName` varchar(45) NOT NULL,
-  `dLocation` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`dName`),
-  UNIQUE KEY `dName_UNIQUE` (`dName`)
+CREATE TABLE `Branch_office` (
+  `BranchID` int(11) NOT NULL,
+  `Location` varchar(45) DEFAULT NULL,
+  `Phone` int(11) DEFAULT NULL,
+  `dname` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`BranchID`),
+  UNIQUE KEY `BranchID_UNIQUE` (`BranchID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Dealership`
+-- Dumping data for table `Branch_office`
 --
 
-LOCK TABLES `Dealership` WRITE;
-/*!40000 ALTER TABLE `Dealership` DISABLE KEYS */;
-INSERT INTO `Dealership` VALUES ('COCKRAM','Vancouver'),('Harrison','Calgary');
-/*!40000 ALTER TABLE `Dealership` ENABLE KEYS */;
+LOCK TABLES `Branch_office` WRITE;
+/*!40000 ALTER TABLE `Branch_office` DISABLE KEYS */;
+INSERT INTO `Branch_office` VALUES (1000,'Calgary',2147483647,'Harrison'),(1001,'Vancouver',2147483647,'Harrision'),(1002,'Calgary',2147483647,'COCKRAM'),(1004,'Toronto',2147483647,'COCKRAM');
+/*!40000 ALTER TABLE `Branch_office` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

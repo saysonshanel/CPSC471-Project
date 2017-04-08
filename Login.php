@@ -19,8 +19,13 @@
         
          //session_register("$myusername");
          $_SESSION['login_user'] = $myusername;
-         
-         header("location: welcome.php");
+         if($myusername == "employee"){
+         	header("location: employee.php");
+         }else if($myusername == "customer"){
+                header("location: customer.php");
+         }else if($myusername == "administration"){
+                header("location: administration.php");
+         }
       }else {
          $error = "Your Login Name or Password is invalid";
       }

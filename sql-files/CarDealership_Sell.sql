@@ -19,26 +19,26 @@
 -- Table structure for table `Sell`
 --
 
-DROP TABLE IF EXISTS `Sell`;
+DROP TABLE IF EXISTS `sell`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Sell` (
+CREATE TABLE `sell` (
   `eid` int(11) NOT NULL,
   `vin` int(11) NOT NULL,
   PRIMARY KEY (`eid`,`vin`),
   UNIQUE KEY `eid_UNIQUE` (`eid`),
-  UNIQUE KEY `vin_UNIQUE` (`vin`)
+  UNIQUE KEY `vin_UNIQUE` (`vin`),
+  CONSTRAINT `eid` FOREIGN KEY (`eid`) REFERENCES `employee` (`EMPid`),
+  CONSTRAINT `vvin` FOREIGN KEY (`vin`) REFERENCES `vehicles` (`VIN`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `Sell`
 --
-
-LOCK TABLES `Sell` WRITE;
+INSERT INTO `sell` VALUES (1,10002),(6,10006);
 /*!40000 ALTER TABLE `Sell` DISABLE KEYS */;
 /*!40000 ALTER TABLE `Sell` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

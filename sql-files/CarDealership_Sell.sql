@@ -19,10 +19,10 @@
 -- Table structure for table `Sell`
 --
 
-DROP TABLE IF EXISTS `sell`;
+DROP TABLE IF EXISTS `Sell`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sell` (
+CREATE TABLE `Sell` (
   `eid` int(11) NOT NULL,
   `vin` int(11) NOT NULL,
   PRIMARY KEY (`eid`,`vin`),
@@ -36,7 +36,7 @@ CREATE TABLE `sell` (
 --
 -- Dumping data for table `Sell`
 --
-INSERT INTO `sell` VALUES (1,10002),(6,10006);
+INSERT INTO `Sell` VALUES (1,10002),(6,10006);
 /*!40000 ALTER TABLE `Sell` DISABLE KEYS */;
 /*!40000 ALTER TABLE `Sell` ENABLE KEYS */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

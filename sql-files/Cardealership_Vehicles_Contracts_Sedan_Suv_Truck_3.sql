@@ -94,3 +94,6 @@ CREATE TABLE `sedan` (
 # Data for table "sedan"
 #
 
+INSERT INTO `sedan` VALUES (10007),(10008),(10009);
+
+

@@ -36,7 +36,7 @@ CREATE TABLE `Dealership` (
 
 LOCK TABLES `Dealership` WRITE;
 /*!40000 ALTER TABLE `Dealership` DISABLE KEYS */;
-INSERT INTO `Dealership` VALUES ('COCKRAM','Vancouver'),('Harrison','Calgary');
+INSERT INTO `dealership` VALUES ('COCKRAM','Cockram, AB',3),('Harrison TOYOTA','Harrison, AR',1),('Manqun','Manqun,DC',2);
 /*!40000 ALTER TABLE `Dealership` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

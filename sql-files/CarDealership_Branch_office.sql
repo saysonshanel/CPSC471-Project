@@ -26,7 +26,6 @@ CREATE TABLE `Branch_office` (
   `BranchID` int(11) NOT NULL,
   `Location` varchar(45) DEFAULT NULL,
   `Phone` int(11) DEFAULT NULL,
-  `dname` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`BranchID`),
   UNIQUE KEY `BranchID_UNIQUE` (`BranchID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -38,7 +37,7 @@ CREATE TABLE `Branch_office` (
 
 LOCK TABLES `Branch_office` WRITE;
 /*!40000 ALTER TABLE `Branch_office` DISABLE KEYS */;
-INSERT INTO `Branch_office` VALUES (1000,'Calgary',2147483647,'Harrison'),(1001,'Vancouver',2147483647,'Harrision'),(1002,'Calgary',2147483647,'COCKRAM'),(1004,'Toronto',2147483647,'COCKRAM');
+INSERT INTO `Branch_office` VALUES (1000,'Calgary',2147483647),(1001,'Vancouver',2147483647),(1002,'Calgary',2147483647),(1004,'Toronto',2147483647);
 /*!40000 ALTER TABLE `Branch_office` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-07 16:54:13
+-- Dump completed on 2017-04-09 15:37:48

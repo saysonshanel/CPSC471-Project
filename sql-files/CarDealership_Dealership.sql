@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `Dealership`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Dealership` (
   `dName` varchar(45) NOT NULL,
-  `dLocation` varchar(45) DEFAULT NULL,
+  `bid` int(11) DEFAULT NULL,
   PRIMARY KEY (`dName`),
   UNIQUE KEY `dName_UNIQUE` (`dName`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -36,7 +36,7 @@ CREATE TABLE `Dealership` (
 
 LOCK TABLES `Dealership` WRITE;
 /*!40000 ALTER TABLE `Dealership` DISABLE KEYS */;
-INSERT INTO `dealership` VALUES ('COCKRAM','Cockram, AB'),('Harrison TOYOTA','Harrison, AR'),('Manqun','Manqun,DC');
+INSERT INTO `Dealership` VALUES ('Autonation',1001),('Carmax',1001),('COCKRAM',1000),('Harrison',1000),('Hendrick ',1004),('Penske',1001),('Sonic',1004),('Tuyl',1004);
 /*!40000 ALTER TABLE `Dealership` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-07 16:54:13
+-- Dump completed on 2017-04-09 15:37:48

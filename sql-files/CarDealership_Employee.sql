@@ -38,7 +38,7 @@ CREATE TABLE `Employee` (
 
 LOCK TABLES `Employee` WRITE;
 /*!40000 ALTER TABLE `Employee` DISABLE KEYS */;
-INSERT INTO `Employee` VALUES (1,'Jack Ali',2,1000,'Harrison'),(2,'Mary Aral',2,1000,'Harrison'),(3,'Kevin Berlak',5,1001,'Harrison'),(4,'Paul Delima',5,1001,'Harrison'),(5,'Jason Comfort',5,1001,'Harrison'),(6,'Linda Farah',8,1004,'COCKRAM'),(7,'Devid Geist',8,1004,'COCKRAM'),(8,'Daniel',8,1004,'COCKRAM'),(9,'Mark Federl',9,1010,'Manqun'),(10,'Anna Clark',9,1008,'Manqun');
+INSERT INTO `Employee` VALUES (1,'Jack Ali',2,1000,'Harrison'),(2,'Mary Aral',2,1000,'COCKRAM'),(3,'Kevin Berlak',5,1001,'Penske'),(4,'Paul Delima',5,1001,'Autonation'),(5,'Jason Comfort',5,1001,'Carmax'),(6,'Linda Farah',8,1004,'Sonic'),(7,'Devid Geist',8,1004,'Tuyl'),(8,'Daniel',8,1004,'Hendrick ');
 /*!40000 ALTER TABLE `Employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-07 16:54:13
+-- Dump completed on 2017-04-09 15:37:48

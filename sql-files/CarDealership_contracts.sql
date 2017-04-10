@@ -16,28 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Dealership`
+-- Table structure for table `contracts`
 --
 
-DROP TABLE IF EXISTS `Dealership`;
+DROP TABLE IF EXISTS `contracts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Dealership` (
-  `dName` varchar(45) NOT NULL,
-  `bid` int(11) DEFAULT NULL,
-  PRIMARY KEY (`dName`),
-  UNIQUE KEY `dName_UNIQUE` (`dName`)
+CREATE TABLE `contracts` (
+  `CSIN` int(11) DEFAULT NULL,
+  `DESCRIPTION` int(11) NOT NULL,
+  `WARRANTY` text,
+  `LEASE` int(11) DEFAULT NULL,
+  `FINANCE` int(11) DEFAULT NULL,
+  `DNAME` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`DESCRIPTION`),
+  UNIQUE KEY `DESCRIPTION_UNIQUE` (`DESCRIPTION`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Dealership`
+-- Dumping data for table `contracts`
 --
 
-LOCK TABLES `Dealership` WRITE;
-/*!40000 ALTER TABLE `Dealership` DISABLE KEYS */;
-INSERT INTO `Dealership` VALUES ('Autonation',1001),('Carmax',1001),('COCKRAM',1000),('Harrison',1000),('Hendrick ',1004),('Penske',1001),('Sonic',1004),('Tuyl',1004);
-/*!40000 ALTER TABLE `Dealership` ENABLE KEYS */;
+LOCK TABLES `contracts` WRITE;
+/*!40000 ALTER TABLE `contracts` DISABLE KEYS */;
+INSERT INTO `contracts` VALUES (900000000,10001,'10001',NULL,30000,'Harrison'),(900000001,10002,'10002',NULL,15000,'COCKRAM'),(900000002,10003,'10003',NULL,40000,'Penske'),(900000003,10004,'10004',NULL,17000,'Autonation'),(900000004,10005,'10005',NULL,40000,'Carmax'),(900000005,10006,'10006',NULL,50000,'Sonic'),(900000006,10007,'10007',NULL,35000,'Tuyl'),(900000007,10008,'10008',NULL,30000,'Hendrick '),(900000008,10009,'10009',NULL,40000,'COCKRAM'),(900000009,10010,'10010',NULL,35000,'Autonation');
+/*!40000 ALTER TABLE `contracts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -16,28 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Dealership`
+-- Table structure for table `suv`
 --
 
-DROP TABLE IF EXISTS `Dealership`;
+DROP TABLE IF EXISTS `suv`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Dealership` (
-  `dName` varchar(45) NOT NULL,
-  `bid` int(11) DEFAULT NULL,
-  PRIMARY KEY (`dName`),
-  UNIQUE KEY `dName_UNIQUE` (`dName`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `suv` (
+  `VIN` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`VIN`),
+  CONSTRAINT `SVIN` FOREIGN KEY (`VIN`) REFERENCES `vehicles` (`VIN`)
+) ENGINE=InnoDB AUTO_INCREMENT=10006 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Dealership`
+-- Dumping data for table `suv`
 --
 
-LOCK TABLES `Dealership` WRITE;
-/*!40000 ALTER TABLE `Dealership` DISABLE KEYS */;
-INSERT INTO `Dealership` VALUES ('Autonation',1001),('Carmax',1001),('COCKRAM',1000),('Harrison',1000),('Hendrick ',1004),('Penske',1001),('Sonic',1004),('Tuyl',1004);
-/*!40000 ALTER TABLE `Dealership` ENABLE KEYS */;
+LOCK TABLES `suv` WRITE;
+/*!40000 ALTER TABLE `suv` DISABLE KEYS */;
+INSERT INTO `suv` VALUES (10001),(10003),(10005);
+/*!40000 ALTER TABLE `suv` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

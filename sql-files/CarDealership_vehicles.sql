@@ -16,28 +16,35 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Dealership`
+-- Table structure for table `vehicles`
 --
 
-DROP TABLE IF EXISTS `Dealership`;
+DROP TABLE IF EXISTS `vehicles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Dealership` (
-  `dName` varchar(45) NOT NULL,
-  `bid` int(11) DEFAULT NULL,
-  PRIMARY KEY (`dName`),
-  UNIQUE KEY `dName_UNIQUE` (`dName`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `vehicles` (
+  `VIN` int(11) NOT NULL DEFAULT '0',
+  `MAKE` text,
+  `YEAR` year(4) DEFAULT NULL,
+  `MODEL` text,
+  `DOOR NO.` int(1) DEFAULT NULL,
+  `PRICE` int(6) DEFAULT NULL,
+  `DNAME` varchar(45) DEFAULT NULL,
+  `CSIN` int(11) DEFAULT NULL,
+  `Description` int(11) DEFAULT NULL,
+  `EID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`VIN`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='The eitity "Vehicles"';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Dealership`
+-- Dumping data for table `vehicles`
 --
 
-LOCK TABLES `Dealership` WRITE;
-/*!40000 ALTER TABLE `Dealership` DISABLE KEYS */;
-INSERT INTO `Dealership` VALUES ('Autonation',1001),('Carmax',1001),('COCKRAM',1000),('Harrison',1000),('Hendrick ',1004),('Penske',1001),('Sonic',1004),('Tuyl',1004);
-/*!40000 ALTER TABLE `Dealership` ENABLE KEYS */;
+LOCK TABLES `vehicles` WRITE;
+/*!40000 ALTER TABLE `vehicles` DISABLE KEYS */;
+INSERT INTO `vehicles` VALUES (10001,'TOYOTA',2016,'Camry CE\n',4,25690,'Harrison',900000000,10001,1),(10002,'TOYOTA',2015,'Camry CE',4,22680,'COCKRAM',900000001,10002,2),(10003,'TOYOTA',2015,'Camry CE',4,22680,'Penske',900000002,10003,3),(10004,'TOYOTA',2016,'Camry CE',4,27680,'Autonation',900000003,10004,4),(10005,'TOYOTA',2016,'Camry CE',2,27680,'Carmax',900000004,10005,5),(10006,'TOYOTA',2014,'Camry LE\n',2,22680,'Sonic',900000005,10006,6),(10007,'TOYOTA',2014,'Camry LE',4,22680,'Tuyl',900000006,10007,7),(10008,'TOYOTA',2017,'Camry LE',4,26780,'Hendrick ',900000007,10008,8),(10009,'TOYOTA',2016,'Camry CE',4,23570,'COCKRAM',900000008,10009,2),(10010,'TOYOTA',2015,'Camry CE',4,20150,'Autonation',900000009,10010,4);
+/*!40000 ALTER TABLE `vehicles` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

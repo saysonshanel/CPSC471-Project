@@ -37,7 +37,7 @@ CREATE TABLE `Customer` (
 
 LOCK TABLES `Customer` WRITE;
 /*!40000 ALTER TABLE `Customer` DISABLE KEYS */;
-INSERT INTO `Customer` VALUES (900000000,'Joyce Kwan',1),(900000001,'Samuel Chan',2),(900000003,'Kelly Luu',3),(900000004,'Andrew Lata',4),(900000005,'Lori Fichtel',5),(900000006,'Emily German',6),(900000007,'Tony Hoey',7),(900000008,'Allen Zhang',8),(900000009,'Kim Hundal',2),(900000010,'Troy Italia',4);
+INSERT INTO `Customer` VALUES (900000000,'Joyce Kwan',1),(900000001,'Samuel Chan',2),(900000002,'Kelly Luu',3),(900000003,'Andrew Lata',4),(900000004,'Lori Fichtel',5),(900000005,'Emily German',6),(900000006,'Tony Hoey',7),(900000007,'Allen Zhang',8),(900000008,'Kim Hundal',2),(900000009,'Troy Italia',4);
 /*!40000 ALTER TABLE `Customer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-09 15:37:48
+-- Dump completed on 2017-04-09 19:51:57
